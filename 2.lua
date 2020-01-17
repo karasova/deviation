@@ -1,7 +1,12 @@
 -- local file = io.open(arg[1], "r")
--- lines = {}
--- for line in io.lines(file) do 
---     lines[#lines + 1] = tonumber(line)
+-- lines = file:read("*a")
+-- file:close(...)
+
+-- string.gsub( lines,"%\n", " ")
+
+-- txt = {}
+-- for substring in lines:gmatch("%S+") do
+--     table.insert(txt, substring)
 -- end
 
 lines = {}
